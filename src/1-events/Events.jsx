@@ -1,17 +1,25 @@
 const Events = () => {
+  let message = "EVENTS";
+
   const handleClick = (e) => {
     alert("Hi");
     console.log(e);
     console.log(e.target);
   };
 
+  const handleChange = (e) => {
+    console.log(e.target);
+    message = "STATE";
+    console.log(message);
+  };
+    
   return (
     <div>
-      <h1>EVENTS</h1>
+      <h1>{message}</h1>
       <button onClick={handleClick}>Click</button>
       <button onClick={() => alert("Deneme")}>Save</button>
 
-      <button>Change</button>
+      <button onClick={handleChange}>Change</button>
     </div>
   );
 };

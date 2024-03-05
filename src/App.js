@@ -1,9 +1,13 @@
-import Events from "./1-events/Events";
+// import Events from "./1-events/Events";
+import UseStateCounter from "./2-useState/UseStateCounter";
+import UseStateObject from "./2-useState/UseStateObject";
 
 function App() {
   return (
     <div>
-      <Events />
+      {/* <Events /> */}
+      {/* <UseStateCounter /> */}
+      <UseStateObject />
     </div>
   );
 }
